@@ -1,0 +1,107 @@
+.body {
+    height: 100%;
+    width: 98%;
+    background-color: #5783C9;
+    /* display: flex; */
+}
+.loginheader {
+
+    height: 151px;
+    top: 3px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.container {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+.credentials{
+    box-sizing: border-box;
+    position: absolute;
+    width: 597px;
+    height: 500px;
+    top: 150px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    box-shadow: 15px 10.86px 12.86px rgba(0, 0, 0, 0.25);
+    border-radius: 7.2893px;
+
+}
+.row {
+    margin-top: 50px;
+    position: relative;
+    width: 520px;
+    height: 49px;
+    left: 40px;
+    top: 10%;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+}
+
+
+.credentialLabel{
+    width: 28%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+    justify-content: center;
+}
+.inputBox {
+    box-sizing: border-box;
+    width: 351px;
+    height: 30px;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+}
+
+.table {
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
+}
+#submitButton {
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 20px;
+    width: 85px;
+    height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 13px;
+}
+#submitButton:hover {
+    background: #726d6de9;
+    cursor: pointer;
+}
+
+.submitArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}

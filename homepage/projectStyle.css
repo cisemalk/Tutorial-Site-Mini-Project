@@ -1,0 +1,234 @@
+.topnavbar {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px 0px 40px 40px;
+    background: #5783C9;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    
+}
+
+.topnavbar a {
+    font-family: DM Sans;
+    float: left;
+    color: #BDD7FF;
+    text-align: center;
+    padding: 20px 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.topnavbar a:hover:not(.navBarSubjectTable a) {
+    background-color: #BDD7FF;
+    border-radius: 25px;
+    height: 35px;
+    color: #5783C9;
+    transition: 0.25s;
+}
+
+
+.topnavbar a.active:not(.navBarSubjectTable a) {
+    background-color: #BDD7FF;
+    height: 35px;
+    border-radius: 25px 25px 0px 0px;
+    color: #5783C9;
+}
+
+.mainMenuHeader {
+    font-family: 'DM Sans';
+    font-size: 110px;
+}
+
+.mainMenuHeader2 {
+    font-family: 'DM Sans';
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.tutorialDiv {
+    position: absolute;
+    display: none;
+    width: 970px;
+    height: 470px;
+    left: 218px;
+    top: 75px;
+    border-radius: 0px 25px 25px 25px;
+    background: #BDD7FF;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    animation: fadein 0.2s;
+
+}
+
+.tutorialMenuDiv a {
+    position: absolute;
+    font-weight: 500;
+    font-size: 45px;
+    top: 5px;
+    line-height: 46px;
+    color: #5783C9;
+    user-select: none;
+
+}
+
+.tutorialMenuDivInside a {
+    position: absolute;
+    font-weight: 500;
+    font-size: 25px;
+    top: 85px;
+    left: 15px;
+    color: #000000;
+    padding: 5px 10px;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+
+}
+
+
+.tutorialMenuDivInside a.active {
+    position: absolute;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 46px;
+    color: #000000;
+
+}
+
+.divDisplayToggle {
+    display: block;
+}
+
+.mainMenuBodyHeaderTable {
+    margin-top: 120px;
+    border: 5;
+    width: 100%;
+    user-select: none;
+}
+
+.mainMenuBodyHeader2Table {
+    margin-top: 10px;
+    border: 5;
+    width: 75%;
+}
+
+.mainMenuBodyContentTable {
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #5783C9;
+    margin-top: 75px;
+    width: 1000px;
+    height: 750px;
+    background-color: #cee1ff;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.50);
+}
+
+.mainMenuBodyContentTableHeader {
+    font-family: 'DM Sans';
+    font-size: 65px;
+    margin-top: 10px;
+    height: 140px;
+    user-select: none;
+}
+
+.mainMenuBodyContentTableInside {
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #5783C9;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    background-color: #bbd6ff;
+    border-spacing: 15px;
+    height: 45vh;
+    width: 800px;
+}
+
+.mainMenuBodyContentTableInside td a {
+    font-family: 'DM Sans';
+    font-size: 25px;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    user-select: none;
+    padding: 8px 10px;
+}
+
+.mainMenuBodyContentTableInside td a:hover {
+    background: rgba(87, 131, 201, 0.35);
+    transition: 0.25s;
+    border-radius: 15px;
+}
+
+.mainMenuBodyContentTableInsideHeader {
+    font-family: 'DM Sans';
+    font-size: 40px;
+    user-select: none;
+
+}
+
+.navBarSubjectTable {
+    border-spacing: 15px;
+    width: 950px;
+    height: 450px;
+}
+
+.navBarSubjectTable a {
+    font-family: 'DM Sans';
+    font-size: 25px;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    user-select: none;
+    padding: 8px 10px;
+
+}
+
+.navBarSubjectTable a:hover {
+    background: rgba(87, 131, 201, 0.35);
+    transition: 0.25s;
+    border-radius: 15px;
+}
+
+input[type="submit"] {
+    float: right;
+    background-color: #CEE1FF;
+    border: 5px solid;
+    border-color: #A7C7FB;
+    border-radius: 15px;
+    width: 120;
+    height: 55;
+    margin-top: 10;
+    margin-right: 45;
+    color: #5783C9;
+    font-family: DM Sans;
+    font-size: 25px;
+}
+
+input[type="submit"]:hover {
+    background-color: #d9e8ff;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+input[type="submit"]:active {
+    background-color: #b8d3fc;
+    border-color: #89b4fa;
+    cursor: pointer;
+    transition: 0.10s;
+}
+
+form {
+    margin-top: -15px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

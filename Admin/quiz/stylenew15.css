@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(50, 86, 132);
+    border: 0;
+    font-size: 18px;
+}
+
+header{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    background-color: rgb(112, 152, 202);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 80px;
+}
+p{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+body{
+    margin: 20px;
+    display:grid;
+    place-items: center;
+    background:rgb(228, 234, 255);
+}
+
+.button{
+    width: 700px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    background-color: rgb(112, 152, 202);
+    color:rgb(254, 254, 254);
+}
+.button:hover{
+    background-color: white;
+    color:rgb(112, 152, 202);
+}
+
+
+.deneme{
+    display: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    width: 680px;
+    background-color: #456299;
+}
+.deneme:hover{
+    background-color: rgb(132, 164, 213);
+    color:#456299;
+}
+
+.input{
+    display: none;
+    color: rgb(54, 71, 106);
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    width: 680px;
+    background: rgb(248, 251, 255);
+}
+.toggle{
+    display:block;
+}
+
+.input2{
+    display: none;
+    color: rgb(54, 71, 106);
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    width: 680px;
+    height: 100px;
+    background: rgb(248, 251, 255);
+}
+
+.input3{
+    display: none;
+    color: rgb(54, 71, 106);
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    width: 680px;
+    background: rgb(248, 251, 255);
+}
+.input4{
+    display: none;
+    color: rgb(54, 71, 106);
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    width: 680px;
+    background: rgb(248, 251, 255);
+}
+.input5{
+    display: none;
+    color: rgb(54, 71, 106);
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    width: 680px;
+    background: rgb(248, 251, 255);
+}
+
+h4{
+    font-size: 20px;
+    background-color: rgb(221, 228, 240);
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+table th{
+    background: rgb(185, 211, 255);
+
+}
+table td{
+    color: rgb(42, 53, 94);
+    background: rgb(199, 218, 251);
+    text-align: center;
+    table-layout: fixed;
+    word-wrap: break-word;
+    width: 70px;
+}
+.btn{
+    background: rgb(79, 106, 169);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn:hover{
+    background: white;
+    color:rgb(79, 106, 169);
+
+}
+
+.pls{
+    display: none;
+    background-color: #acc3df;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+}
+
+.aa{
+    margin-top: 200px;
+}
+
+.updatesection{
+    background-color: rgb(128, 157, 202);
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+.updatebutton{
+    width: 700px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    background-color: #3a547c;
+    cursor: pointer;
+}
+.updatebutton2{
+    width: 500px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    background-color: #3a547c;
+    cursor: pointer;
+}
+.inputupdate{
+    width: 700px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    color: rgb(54, 72, 99);
+}

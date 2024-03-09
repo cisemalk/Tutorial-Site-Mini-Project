@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Cihan Armagan Guner">
+		<meta name="keywords" content="HTML, CSS, JavaScript, Java Compiler">
+		<title>Team 1 - Java Compiler</title>
+		<link rel="stylesheet" href="css/compilerStyles.css">
+	</head>
+
+	<body>
+		<div class="kutu">
+			<p>Welcome to compiler page</p>
+		</div>
+
+		<div class="kutu2">
+			<div class="code">Code:</div>
+			<div class="out">Output:</div>
+			<div>
+				<textarea id="code" class="input_text_area">
+				</textarea>
+				<textarea id="output" class="output_text_area"></textarea>
+				<button class="execute_button" id="execute">Execute</button>
+			</div>
+			<div class="poweredd">Powered by Team1</div>
+		</div>
+
+		<script
+		src="https://code.jquery.com/jquery-3.6.3.js"
+		integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+		crossorigin="anonymous"></script>
+
+			<script>
+
+                document.getElementById("execute").onclick = async () => {
+                    var code = document.getElementById("code").value;
+
+
+                    await fetch("https://emkc.org/api/v2/piston/execute", {
+                        method: "post",
+                        headers: { "content-type": "application/json" },
+                        body: JSON.stringify({
+                            language: "java",
+                            version: "15.0.2",
+                            files: [{
+                                "name": "Main.java",
+                                "content": `
+							${code}
+						`
+                            }]
+                        })
+                    })
+                        .then((r) => r.json())
+                        .then((r) => {
+                            // if (r.run)
+                            console.log(r);
+                            if (r.run.stderr != "") {
+                                document.getElementById("output").value = r.run.stderr;
+								$.post("compilerrequest.php",
+								{
+								code11: document.getElementById("code").value,
+								output11: document.getElementById("output").value
+								},
+								function(data,status){
+								alert("Data: " + data + "\nStatus: " + status);
+								});
+                            }
+                            else {
+                                document.getElementById("output").value = r.run.stdout;
+								$.post("compilerrequest.php",
+								{
+								code11: document.getElementById("code").value,
+								output11: document.getElementById("output").value
+								},
+								function(data,status){
+								alert("Data: " + data + "\nStatus: " + status);
+								});
+                            }
+                        });
+				};
+				
+			</script>
+
+	</body>
+</html>
